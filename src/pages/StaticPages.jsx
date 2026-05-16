@@ -1,9 +1,17 @@
 // Privacy Policy, Terms of Use, Accessibility Statement, Sitemap
 import { Link } from 'react-router-dom';
 import { Shield, FileText, Eye, Map } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export const Privacy = () => (
   <div className="w-full bg-slate-50 min-h-screen pb-16">
+    <SEO
+      title="Privacy Policy"
+      description="Privacy policy of Swami Vivekanand College of Arts and Science. Learn how we collect, use, and protect your personal information."
+      keywords="privacy policy, data protection, personal information, college privacy"
+      canonical="/privacy"
+      noIndex={true}
+    />
     <div className="bg-[#0b1b3d] text-white py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold mb-2 flex items-center gap-3">
@@ -37,6 +45,13 @@ export const Privacy = () => (
 
 export const Terms = () => (
   <div className="w-full bg-slate-50 min-h-screen pb-16">
+    <SEO
+      title="Terms of Use"
+      description="Terms of use for the Swami Vivekanand College website. Understand the conditions governing your use of our website and its content."
+      keywords="terms of use, website terms, college website policy"
+      canonical="/terms"
+      noIndex={true}
+    />
     <div className="bg-[#0b1b3d] text-white py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold mb-2 flex items-center gap-3">
@@ -66,6 +81,13 @@ export const Terms = () => (
 
 export const Accessibility = () => (
   <div className="w-full bg-slate-50 min-h-screen pb-16">
+    <SEO
+      title="Accessibility Statement"
+      description="Swami Vivekanand College is committed to WCAG 2.1 AA accessibility standards. Learn about our accessibility features and how to report barriers."
+      keywords="accessibility statement, WCAG 2.1, accessible website, college accessibility"
+      canonical="/accessibility"
+      noIndex={true}
+    />
     <div className="bg-[#0b1b3d] text-white py-12">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold mb-2 flex items-center gap-3">
@@ -163,6 +185,13 @@ export const Sitemap = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Sitemap"
+        description="Complete sitemap of Swami Vivekanand College website. Find all pages including academics, admissions, faculty, IQAC, downloads, and more."
+        keywords="sitemap, college website pages, site directory"
+        canonical="/sitemap"
+        noIndex={true}
+      />
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold mb-2 flex items-center gap-3">

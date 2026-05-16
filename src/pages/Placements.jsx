@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Briefcase, TrendingUp, Building, Users, Star, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const stats = [
   { label: 'Placement Rate', value: '85%', icon: Briefcase, color: 'blue' },
@@ -52,6 +53,12 @@ const colorMap = {
 const Placements = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Training & Placements"
+        description="Swami Vivekanand College placement cell achieves 85% placement rate with highest package of 12 LPA. Top recruiters include TCS, Infosys, Wipro, HCL and 50+ companies."
+        keywords="college placements, campus placement, placement rate, highest package, TCS Infosys Wipro recruiter, training and placement cell"
+        canonical="/placements"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

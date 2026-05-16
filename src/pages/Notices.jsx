@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Bell, Calendar, Tag, Search, Download } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const allNotices = [
   {
@@ -133,6 +134,12 @@ const Notices = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Notice Board"
+        description="Latest notices, circulars, and announcements from Swami Vivekanand College. Stay updated on admissions, exams, scholarships, and campus events."
+        keywords="college notices, college announcements, circulars, admission notice, exam notice, scholarship notice, college updates"
+        canonical="/notices"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

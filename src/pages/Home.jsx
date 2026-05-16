@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, BookOpen, Users, Trophy, Bell, Award, Download, Phone, ChevronRight, GraduationCap, Building2, FlaskConical } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 
 const notices = [
   { text: 'Admission 2026-27 process has started. Last date to apply is June 30th.', important: true },
@@ -30,6 +31,12 @@ const quickLinks = [
 const Home = () => {
   return (
     <div className="w-full">
+      <SEO
+        title="Home"
+        description="Swami Vivekanand College of Arts and Science – UGC Recognized, NAAC 'A' Grade Accredited institution in Maharashtra. Admissions open for 2026-27. Explore UG & PG programs in Arts, Science and Commerce."
+        keywords="Swami Vivekanand College, arts and science college, UGC recognized college, NAAC A grade, college admissions 2026, Maharashtra college"
+        canonical="/"
+      />
 
       {/* ── Hero ── */}
       <section className="relative bg-[#1A3A5C] text-white overflow-hidden" aria-label="Hero section">

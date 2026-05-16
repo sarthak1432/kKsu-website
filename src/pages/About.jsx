@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Building2, Award, Users, BookOpen, CheckCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('overview');
@@ -14,6 +15,12 @@ const About = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen">
+      <SEO
+        title="About Us"
+        description="Learn about Swami Vivekanand College of Arts and Science – our history, vision, mission, governance, IQAC, NAAC accreditation and student support facilities."
+        keywords="about college, college history, vision mission, NAAC accreditation, college governance, IQAC"
+        canonical="/about"
+      />
       {/* Page Header */}
       <div className="bg-[#0b1b3d] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

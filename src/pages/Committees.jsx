@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Users, Shield, Heart, Scale, BookOpen, Leaf } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const committees = [
   {
@@ -99,6 +100,12 @@ const colorMap = {
 const Committees = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Committees & Policies"
+        description="Statutory committees at Swami Vivekanand College including ICC, Anti-Ragging, Grievance Redressal, NSS, and Cultural committees constituted as per UGC regulations."
+        keywords="college committees, ICC, anti-ragging committee, grievance redressal, NSS, UGC statutory committees, college policies"
+        canonical="/committees"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

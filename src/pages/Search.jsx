@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Search as SearchIcon, FileText, BookOpen, Users, Bell, Download } from 'lucide-react';
+import SEO from '../components/SEO';
 
 // Searchable content index
 const searchIndex = [
@@ -89,6 +90,13 @@ const Search = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Search"
+        description="Search for courses, faculty, admissions, notices, downloads, and more on the Swami Vivekanand College website."
+        keywords="college search, find courses, search faculty, search notices"
+        canonical="/search"
+        noIndex={true}
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

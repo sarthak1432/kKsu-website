@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, BookOpen, Award } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const facultyData = [
   {
@@ -176,6 +177,12 @@ const Faculty = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Faculty"
+        description="Meet the experienced and qualified faculty members of Swami Vivekanand College of Arts and Science. Our educators bring expertise across all departments."
+        keywords="college faculty, professors, teaching staff, college teachers, department faculty"
+        canonical="/faculty"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

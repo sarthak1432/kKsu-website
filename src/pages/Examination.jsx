@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FileText, Calendar, AlertCircle, Download, CheckCircle } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const examSchedule = [
   { program: 'B.Sc. IT – Semester IV', date: 'Nov 10, 2026', time: '10:00 AM', venue: 'Block A, Hall 1' },
@@ -15,6 +16,12 @@ const examSchedule = [
 const Examination = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Examination Information"
+        description="Examination timetables, hall tickets, results, and guidelines for all UG and PG programs at Swami Vivekanand College of Arts and Science."
+        keywords="college examination, exam timetable, hall ticket, exam results, semester exam schedule, university exam"
+        canonical="/examination"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

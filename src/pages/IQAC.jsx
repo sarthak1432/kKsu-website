@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Award, FileText, Download, CheckCircle, Users, Target } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const naacDocuments = [
   { name: 'Self Study Report (SSR)', year: '2024-2025', type: 'SSR' },
@@ -36,6 +37,12 @@ const criteria = [
 const IQAC = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="IQAC & NAAC Accreditation"
+        description="Swami Vivekanand College is NAAC 'A' Grade accredited with CGPA 3.15 (2022). Explore IQAC activities, AQAR reports, SSR, and quality enhancement initiatives."
+        keywords="NAAC A grade, IQAC, NAAC accreditation, CGPA 3.15, AQAR, SSR, quality assurance, UGC recognized college"
+        canonical="/iqac"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,4 +1,5 @@
 import { Book, Code, Calculator, Beaker, Globe, Landmark } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Courses = () => {
   const departments = [
@@ -12,9 +13,15 @@ const Courses = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Courses & Programs"
+        description="Explore UG and PG academic programs at Swami Vivekanand College – B.Sc. IT, BCA, B.A., B.Com, M.Sc., M.Com and more. Quality education in Arts, Science and Commerce."
+        keywords="college courses, UG programs, PG programs, BSc IT, BCA, BA, BCom, MSc, MCom, arts science commerce"
+        canonical="/courses"
+      />
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Academic Programs & Departments</h1>
+          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Courses & Programs</h1>
           <p className="text-slate-300 max-w-2xl text-lg">
             Explore our wide range of undergraduate and postgraduate programs designed to foster academic excellence and career readiness.
           </p>

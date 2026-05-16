@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ChevronLeft, ChevronRight, Image } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const galleryData = [
   {
@@ -67,6 +68,12 @@ const Gallery = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16" onKeyDown={handleKeyDown}>
+      <SEO
+        title="Gallery"
+        description="Photo gallery of Swami Vivekanand College – campus, events, sports, cultural programs, labs and student life."
+        keywords="college gallery, college photos, campus photos, college events, student life"
+        canonical="/gallery"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Download, FileText, Search, FolderOpen } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const downloadCategories = [
   {
@@ -103,6 +104,12 @@ const Downloads = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Downloads"
+        description="Download admission forms, prospectus, fee structure, scholarship forms, examination timetables, and other important documents from Swami Vivekanand College."
+        keywords="college downloads, admission form download, prospectus PDF, fee structure download, scholarship form, exam timetable download"
+        canonical="/downloads"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

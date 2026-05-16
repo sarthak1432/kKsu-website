@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Calendar, Download, Clock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const calendarData = [
   {
@@ -71,6 +72,12 @@ const typeColors = {
 const AcademicCalendar = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Academic Calendar 2026-27"
+        description="View the academic calendar for Swami Vivekanand College of Arts and Science. Important dates for admissions, exams, holidays, and events for 2026-27."
+        keywords="academic calendar 2026-27, college schedule, exam dates, semester dates, college events, holiday list"
+        canonical="/academic-calendar"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

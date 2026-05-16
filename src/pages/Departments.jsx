@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Code, Calculator, Beaker, Globe, Landmark, Book, FlaskConical, Users } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const departments = [
   {
@@ -121,6 +122,12 @@ const Departments = () => {
 
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Departments"
+        description="Explore academic departments at Swami Vivekanand College – Computer Science, Mathematics, Physics, Chemistry, Humanities, Commerce and more."
+        keywords="college departments, computer science department, arts department, science department, commerce department"
+        canonical="/departments"
+      />
       {/* Header */}
       <div className="bg-[#0b1b3d] text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

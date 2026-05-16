@@ -1,13 +1,22 @@
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Contact = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
-      <div className="bg-[#0b1b3d] text-white py-12">
+      <SEO
+        title="Contact Us"
+        description="Get in touch with Swami Vivekanand College of Arts and Science. Find our address, phone number, email and location map."
+        keywords="contact college, college address, college phone number, college location"
+        canonical="/contact"
+      />
+
+      {/* Page Header */}
+      <div className="bg-[#0b1b3d] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Contact Us</h1>
-          <p className="text-slate-300 max-w-2xl text-lg">
-            We are here to answer any questions you may have. Reach out to us and we'll respond as soon as we can.
+          <p className="text-slate-300 max-w-3xl text-lg">
+            We'd love to hear from you. Reach out for admissions, general enquiries, or any other assistance.
           </p>
         </div>
       </div>

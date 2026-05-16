@@ -1,12 +1,20 @@
 import { ShieldAlert, AlertCircle, FileText, FileSignature } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const MandatoryDisclosure = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
+      <SEO
+        title="Mandatory Disclosure"
+        description="Mandatory information disclosure of Swami Vivekanand College as per UGC guidelines, RTI Act 2005, anti-ragging cell, grievance redressal and more."
+        keywords="mandatory disclosure college, UGC compliance, RTI college, anti-ragging, grievance redressal"
+        canonical="/mandatory-disclosure"
+      />
+
       {/* Page Header */}
-      <div className="bg-[#0b1b3d] text-white py-12">
+      <div className="bg-[#0b1b3d] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Mandatory Information Disclosure</h1>
+          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Mandatory Disclosure</h1>
           <p className="text-slate-300 max-w-3xl text-lg">
             In compliance with the University Grants Commission (UGC) Guidelines and Right to Information (RTI) Act, we transparently disclose the following statutory committees, policies, and public information.
           </p>

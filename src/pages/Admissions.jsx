@@ -1,13 +1,22 @@
 import { CheckCircle2, FileText, Calendar, IndianRupee } from 'lucide-react';
+import SEO from '../components/SEO';
 
 const Admissions = () => {
   return (
     <div className="w-full bg-slate-50 min-h-screen pb-16">
-      <div className="bg-[#0b1b3d] text-white py-12">
+      <SEO
+        title="Admissions 2026-27"
+        description="Apply for admission at Swami Vivekanand College of Arts and Science for 2026-27. Explore UG & PG programs, fee structure, scholarships and eligibility criteria."
+        keywords="college admissions 2026, arts science college admission, UG PG admission Maharashtra, college application form"
+        canonical="/admissions"
+      />
+
+      {/* Page Header */}
+      <div className="bg-[#0b1b3d] text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Admission Process 2026-27</h1>
-          <p className="text-slate-300 max-w-2xl text-lg">
-            Join our community of learners. Find everything you need to know about applying, fee structures, and available scholarships.
+          <h1 className="text-3xl lg:text-4xl font-extrabold mb-4">Admissions 2026–27</h1>
+          <p className="text-slate-300 max-w-3xl text-lg">
+            Applications are now open for UG and PG programs. Join a UGC recognized, NAAC 'A' Grade accredited institution committed to quality education.
           </p>
         </div>
       </div>
